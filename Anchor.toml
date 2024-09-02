@@ -2,16 +2,16 @@
 seeds = false
 skip-lint = false
 [programs.localnet]
-perpetuals = "Bmr31xzZYYVUdoHmAJL1DAp2anaitW8Tw9YfASS94MKJ"
+perpetuals = "3LjnwXNbvUe9DB2qaTNvCL4sVvtvshCEeydhzUfkbJTB"
 [programs.devnet]
-perpetuals = "Bmr31xzZYYVUdoHmAJL1DAp2anaitW8Tw9YfASS94MKJ"
+perpetuals = "3LjnwXNbvUe9DB2qaTNvCL4sVvtvshCEeydhzUfkbJTB"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
 cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+wallet = "~/.config/maxq/id.json"
 
 [scripts]
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 programs/perpetuals/tests/anchor/*.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 10000000 programs/perpetuals/tests/anchor/*.ts"
